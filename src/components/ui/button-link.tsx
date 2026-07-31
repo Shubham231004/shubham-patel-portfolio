@@ -26,7 +26,7 @@ export function ButtonLink({
   );
   const className = `button-link button-link--${variant}`;
 
-  if (href.startsWith("#") || href.startsWith("/#")) {
+  if (href.startsWith("#") || href.startsWith("/#") || anchorProps.download) {
     return (
       <a className={className} href={href} {...anchorProps}>
         {content}

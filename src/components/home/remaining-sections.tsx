@@ -328,6 +328,7 @@ export function ContactSection() {
                 download={link.download}
                 href={link.href}
                 key={link.label}
+                prefetch={link.download ? false : undefined}
                 rel={link.href.startsWith("http") ? "noreferrer" : undefined}
                 target={link.href.startsWith("http") ? "_blank" : undefined}
               >
